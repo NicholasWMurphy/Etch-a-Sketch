@@ -6,6 +6,7 @@
 #grid-container {
     display: flex;
     flex-wrap: wrap;
-    min-width: 1600px;
-    min-height: 1600px;
+    max-width: 161px;
+    max-height: 163px;
+    
 }
