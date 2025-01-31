@@ -6,7 +6,26 @@
 #grid-container {
     display: flex;
     flex-wrap: wrap;
-    max-width: 161px;
-    max-height: 163px;
+}
+
+.cells {
+    border: 2px solid blue;
     
+}
+
+
+
+.new-container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 500px;
+    max-height: 500px;
+
+}
+.newDiv {
+    border: 2px solid blue;
+    flex: 1 1 auto;
+    min-width: 31.25px;
+    min-height: 31.25px;
+
 }
