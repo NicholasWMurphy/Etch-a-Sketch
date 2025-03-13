@@ -31,12 +31,17 @@ container.style.height = `${gridSize}px`;
          function promptFunction () {
              container.innerHTML = '';
              var answer = parseInt(prompt("How many squares per side would you like for the new grid?", ""));
-             if (answer >= 100) {
-                var answer = parseInt(prompt("Please enter a value below 100", ""));
+             
+                if (answer < 100) {
+                createGrid(answer, answer);
+                } else {
+                    alert("Value should be between 0 - 100, create a new Canvas");
+                }
+           
                 
-             } 
-             createGrid(answer, answer);
+                
              }
+             
        
 
 
