@@ -13,13 +13,25 @@ container.style.height = `${gridSize}px`;
     cells.style.height = `${gridSize / cols}px`;
     container.appendChild(cells);
 
+    //generate random colour
+    function getRandomColor() {
+        var letters = '0123456789ABCDEF';
+        var color = '#';
+        for (var i = 0; i < 6; i++) {
+          color += letters[Math.floor(Math.random() * 16)];
+        }
+        return color;
+      }
+    
+
     //hover effect
-    cells.onmousemove = () => {
-    cells.style.backgroundColor = "red";
+    cells.onmouseenter = () => {
+    cells.style.backgroundColor =  getRandomColor();
+   
     };
     }
+    }
 
-}
 
  createGrid(16, 16);
 
