@@ -22,13 +22,24 @@ container.style.height = `${gridSize}px`;
         }
         return color;
       }
+
+     
+     
+
     
 
     //hover effect
     cells.onmouseenter = () => {
-    cells.style.backgroundColor =  getRandomColor();
-   
+        const currentOpacity = cells.style.opacity;
+        cells.style.backgroundColor =  getRandomColor();
+    if (currentOpacity) {
+        cells.style.opacity = Number(currentOpacity) + .1;
+    } else {
+        cells.style.opacity = .1;
+    }
     };
+
+   
     }
     }
 
